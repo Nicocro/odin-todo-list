@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h2>Projects</h2>
+        <form id="new-project-form">
+          <input
+            type="text"
+            id="new-project-name"
+            placeholder="New Project Name"
+            required
+          />
+          <button type="submit">Add Project</button>
+        </form>
+        <ul id="project-list">
+          <!-- Project items will be added here -->
+        </ul>
+      </div>
+      <div class="main">
+        <h2>Todo Details</h2>
+        <div id="todo-list">
+          <!-- Todo items will be displayed here -->
+        </div>
+        <button id="add-todo-button">Add Todo</button>
+      </div>
+    </div>
+
+    <dialog id="todo-dialog">
+      <form id="new-todo-form" method="dialog">
+        <h3>Add New Todo</h3>
+        <label for="todo-title">Title:</label>
+        <input type="text" id="todo-title" required />
+        <label for="todo-description">Description:</label>
+        <textarea id="todo-description" required></textarea>
+        <label for="todo-due-date">Due Date:</label>
+        <input type="date" id="todo-due-date" required />
+        <label for="todo-priority">Priority:</label>
+        <select id="todo-priority" required>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+        <button type="submit">Add Todo</button>
+        <button id="close-dialog-button">Cancel</button>
+      </form>
+    </dialog>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

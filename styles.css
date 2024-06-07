@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+#project-list {
+    list-style: none;
+    padding: 0;
+}
+
+#project-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#project-list li:hover {
+    background-color: #e9e9e9;
+}
+
+.main {
+    padding: 20px;
+}
+
+.todo-details {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#add-todo-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#add-todo-button:hover {
+    background-color: #0056b3;
+}
+
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.4);
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+}
+
+dialog form button {
+    margin-top: 10px;
+}
+
+dialog form #close-dialog-button {
+    background-color: #f44336;
+    margin-top: 0;
+}
+
+dialog form #close-dialog-button:hover {
+    background-color: #d32f2f;
+}
